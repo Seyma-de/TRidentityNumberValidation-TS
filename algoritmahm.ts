@@ -59,8 +59,8 @@ form.addEventListener("submit", function (event) {
     }
 
     check == false
-      ? (resultMessage.innerHTML = "&#10060; GECERSIZ TC Kimlik No")
-      : (resultMessage.innerHTML = "&#9989; GECERLI TC Kimlik No");
+      ? (resultMessage.innerHTML = "&#10060;INVALID TR ID Number ")
+      : (resultMessage.innerHTML = "&#9989;VALID TR ID Number ");
     inputEntered.value = "";
   }
 });
