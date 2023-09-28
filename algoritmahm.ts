@@ -21,14 +21,13 @@ form.addEventListener("submit", function (event) {
   girilenDeger.innerHTML = `${enteredNumber}`;
 
   if (!enteredNumber.match(numbers)) {
-    resultMessage.innerHTML = "&#10060; Sadece rakam girebilirsiniz";
+    resultMessage.innerHTML = "&#10060; You can only enter numbers";
     inputEntered.value = "";
   } else if (digits.length !== 11) {
-    resultMessage.innerHTML =
-      "&#10060; TC Kimlik Numarasi 11 haneli olmalidir.";
+    resultMessage.innerHTML = "&#10060; TR ID Number must be 11 digits.";
     inputEntered.value = "";
   } else if (digits[0] == "0") {
-    resultMessage.innerHTML = "&#10060; TC Kimlik Numarasi 0 ile baslayamaz";
+    resultMessage.innerHTML = "&#10060;TR Identity Number cannot start with 0 ";
     inputEntered.value = "";
   } else {
     tek =
